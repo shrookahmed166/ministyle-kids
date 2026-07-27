@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrendVibe - Fashion Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- النافبار -->
+  <div class="navbar" id="home">
+    <div class="logo">TrendVibe</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#size">Size</a>
+      <a href="#cart-section">Total</a>
+    </div>
+  </div>
+
+  <!-- قسم التوتال -->
+  <div class="cart-section" id="cart-section">
+    <h2>Your Cart</h2>
+    <p>Items: <span id="count">0</span></p>
+    <p>Total: $<span id="total">0</span></p>
+  </div>
+
+  <!-- حاسبة المقاس -->
+  <div id="size" class="size-box">
+    <h2>Size Calculator</h2>
+    <p>Enter your age to get your size:</p>
+    Age: <input type="number" id="age" placeholder="15-40" min="15" max="40">
+    <button onclick="getSize()">Check</button>
+    <p id="result"></p>
+  </div>
+
+  <!-- المنتجات -->
+  <h2 class="section-title">Our Products</h2>
+  <div class="container">
+    
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=300" alt="Dress">
+      <h3>solid t-shirt</h3>
+      <p class="price">Price: $50</p>
+      <button onclick="addToCart('solid t-shirt', 50)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300" alt="Tshirt">
+      <h3>Casual T-Shirt</h3>
+      <p class="price">Price: $30</p>
+      <button onclick="addToCart('Casual T-Shirt', 30)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=300" alt="Jeans">
+      <h3>Bink Jeans</h3>
+      <p class="price">Price: $80</p>
+      <button onclick="addToCart('Bink Jeans', 80)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=300" alt="Jacket">
+      <h3>Burgundy Jacket</h3>
+      <p class="price">Price: $120</p>
+      <button onclick="addToCart('Burgundy Jacket', 120)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=300" alt="Skirt">
+      <h3>off-shoulder top</h3>
+      <p class="price">Price: $45</p>
+      <button onclick="addToCart('off-shoulder top', 45)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=300" alt="Bag">
+      <h3>pink off-shoulder top</h3>
+      <p class="price">Price: $70</p>
+      <button onclick="addToCart('pink off-shoulder top', 70)">Add to Cart</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

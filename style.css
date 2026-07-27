@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #fff0f5;
+  font-weight: 600; 
+  scroll-behavior: smooth; 
+}
+
+/* النافبار */
+.navbar {
+  background: #ff69b4;
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+  position: sticky;
+  top: 0;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+.navbar:hover {
+  background: #ff1493;
+  box-shadow: 0 0 25px rgba(255, 20, 147, 0.8);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  transition: 0.2s;
+}
+.nav-links a:hover {
+  color: #ffe4f0;
+  border-bottom: 3px solid white;
+}
+
+/* قسم التوتال */
+.cart-section {
+  text-align: center;
+  padding: 25px;
+  background: white;
+  margin: 25px auto;
+  width: 80%;
+  border-radius: 15px;
+  font-size: 22px;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.section-title {
+  text-align: center; 
+  margin-top: 30px; 
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 260px;
+  text-align: center;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-weight: 600;
+  transition: transform 0.3s;
+}
+.product:hover {
+  transform: translateY(-8px);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.price {
+  font-weight: 700;
+  color: #ff1493;
+  margin: 12px 0;
+  font-size: 20px;
+}
+
+button {
+  background: #ff1493;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+button:hover {
+  background: #c71585;
+  transform: scale(1.05);
+}
+
+.size-box {
+  padding: 30px;
+  margin: 40px auto;
+  width: 60%;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-weight: 600;
+  font-size: 18px;
+}
+.size-box input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 2px solid #ff69b4;
+  font-weight: 600;
+  font-size: 16px;
+}
